@@ -1,0 +1,30 @@
+<script>
+  function addProduct(id) {
+    let cartId = prompt('Ingrese id carrito:')
+    fetch(`http://localhost:8080/api/carts/${cartId}/product/${id}`, {
+      method: "post"
+    })
+    window.location.href = 'http://localhost:8080/products'
+  }
+</script>
+
+<div id="productsContainer">
+  {{#each data.docs}}
+    <div>
+      <h3>{{this.title}}</h3>
+      <p>{{this.description}}</p>
+      <p>${{this.price}}</p>
+      <button onclick="addProduct('{{this._id}}')">Add</button>
+    </div>
+  {{/each}}
+
+  <div>
+    {{#if data.hasPrevPage}}
+      <a href="{{prevLink}}">Anterior</a>
+    {{/if}}
+    |
+    {{#if data.hasNextPage}}
+      <a href="{{nextLink}}">Siguiente</a>
+    {{/if}}
+  </div>
+</div>

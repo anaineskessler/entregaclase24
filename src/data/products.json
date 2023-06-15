@@ -1,0 +1,172 @@
+[
+	{
+		"id": 2,
+		"title": "Remera",
+		"description": "Remera de algodon",
+		"price": 3000,
+		"thumbnail": "-",
+		"code": "a0002",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 3,
+		"title": "Jean",
+		"description": "Jean slim fit",
+		"price": 5000,
+		"thumbnail": "-",
+		"code": "a0003",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 4,
+		"title": "Campera cuero",
+		"description": "Campera de cuero",
+		"price": 10000,
+		"thumbnail": "-",
+		"code": "a0004",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 5,
+		"title": "Remera Pink",
+		"description": "Remera de algodon estampada rosa",
+		"price": 1500,
+		"thumbnail": "-",
+		"code": "a0005",
+		"stock": 20,
+		"status": true
+	},
+	{
+		"id": 6,
+		"title": "Joggineta",
+		"description": "Joggineta de algodon slim fit",
+		"price": 3000,
+		"thumbnail": "-",
+		"code": "a0006",
+		"stock": 30,
+		"status": true
+	},
+	{
+		"id": 7,
+		"title": "Jean",
+		"description": "Jean medium fit",
+		"price": 5000,
+		"thumbnail": "-",
+		"code": "a0007",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 8,
+		"title": "Campera sport",
+		"description": "Campera deportiva",
+		"price": 6000,
+		"thumbnail": "-",
+		"code": "a0008",
+		"stock": 20,
+		"status": true
+	},
+	{
+		"id": 9,
+		"title": "Short",
+		"description": "Short de algodon",
+		"price": 4000,
+		"thumbnail": "-",
+		"code": "a0009",
+		"stock": 50,
+		"status": true
+	},
+	{
+		"id": 11,
+		"title": "Prod",
+		"description": "Remera de algodon",
+		"price": 1000,
+		"thumbnail": "-",
+		"code": "a0099",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 12,
+		"title": "Prod test",
+		"description": "Remera de algodon",
+		"price": 1000,
+		"thumbnail": "-",
+		"code": "a0100",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 13,
+		"title": "Campera sport",
+		"description": "Campera deportiva",
+		"price": 6000,
+		"thumbnail": "-",
+		"code": "a0111",
+		"stock": 20,
+		"status": true
+	},
+	{
+		"id": 14,
+		"title": "Campera sport",
+		"description": "Campera deportiva",
+		"price": 6000,
+		"thumbnail": "-",
+		"code": "a0112",
+		"stock": 20,
+		"status": true
+	},
+	{
+		"id": 15,
+		"title": "Remera",
+		"description": "Remera lisa",
+		"price": "6000",
+		"thumbnail": "-",
+		"code": "a0150",
+		"stock": "10",
+		"status": true
+	},
+	{
+		"id": 16,
+		"title": "Remera",
+		"description": "Remera de algodon",
+		"price": 3000,
+		"thumbnail": "-",
+		"code": "a9999",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 17,
+		"title": "Pantalon",
+		"description": "Pantalon de Jean",
+		"price": 10000,
+		"thumbnail": "-",
+		"code": "a9998",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 18,
+		"title": "Campera",
+		"description": "Campera de Cuero",
+		"price": 25000,
+		"thumbnail": "-",
+		"code": "a9997",
+		"stock": 5,
+		"status": true
+	},
+	{
+		"id": 19,
+		"title": "Remera",
+		"description": "Remera lisa",
+		"price": 2000,
+		"thumbnail": "-",
+		"code": "a9996",
+		"stock": 15,
+		"status": true
+	}
+]

@@ -2,8 +2,8 @@ import { Router } from "express";
 
 const router = Router();
 
-import  chatManager  from "../manager/db/messagesManager.js";
-import messageModel from "../model/mesagges.model.js";
+import chatManager from "../DAO/manager/db/messagesManager.js";
+import messageModel from "../DAO/model/mesagges.model.js";
 
 let clients = 0;
 
@@ -14,13 +14,13 @@ router.get("/", async (req, res) => {
       messages: [],
     });
     let conversationID = result._id.toString();
-     try {
-       chatManager.setID(conversationID).then((id) => {
-         console.log(id);
-       });
-     } catch (err) {
-       console.log("Cannot get products with mongoose: " + err);
-     }
+    try {
+      chatManager.setID(conversationID).then((id) => {
+        console.log(id);
+      });
+    } catch (err) {
+      console.log("Cannot get products with mongoose: " + err);
+    }
   }
   res.render("chat", {});
 });

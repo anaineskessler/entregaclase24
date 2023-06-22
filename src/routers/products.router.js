@@ -1,23 +1,24 @@
-import { manager } from "../manager/db/productManager.js";
+import { manager } from "../DAO/manager/db/productManager.js";
 import { Router } from "express";
 
 const router = Router();
 
-/*
-
 router.get("/:pid", (req, res) => {
   const id = parseInt(req.params.pid);
-  manager.getProductoById(id).then((data) => {
+  manager.getProductById(id).then((data) => {
     if (data == "406a") {
       res.status(406).send({ status: "error", paiload: "No hay productos" });
     } else if (data == "406b") {
-      res.status(406).send({ status: "error", paiload: "No existe el producto" });
+      res
+        .status(406)
+        .send({ status: "error", paiload: "No existe el producto" });
     } else {
       res.send({ status: "success", paiload: data });
     }
   });
 });
 
+/*
 router.put("/:pid", (req, res) => {
   const id = parseInt(req.params.pid);
   const mods = req.body;

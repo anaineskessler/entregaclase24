@@ -1,4 +1,4 @@
-import { manager as cManager } from "../manager/db/cartsManager.js";
+import { manager as cManager } from "../DAO/manager/db/cartsManager.js";
 import { Router } from "express";
 
 const router = Router();
@@ -124,14 +124,14 @@ router.put("/:cid/product/:pid", (req, res) => {
       payload: "No se pudo actualizar el producto al carrito.",
     });
   } else {
-    if(body.qty < 1){
+    if (body.qty < 1) {
       res.send({
         result: "error",
         payload: "No se pudo actualizar el producto al carrito.",
       });
     } else {
       cManager.updateOneItemCart(cid, pid, body).then((data) => {
-        if(data == 406){
+        if (data == 406) {
           res.send({
             result: "error",
             payload: "No se pudo actualizar el producto al carrito.",

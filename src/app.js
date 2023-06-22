@@ -8,8 +8,8 @@ import viewsRouter from "./routers/views.router.js";
 import chatRouter from "./routers/chat.router.js";
 import mongoose from "mongoose";
 
-import  chatManager  from "./manager/db/messagesManager.js";
-import messageModel from "./model/mesagges.model.js";
+import chatManager from "./DAO/manager/db/messagesManager.js";
+import messageModel from "./DAO/model/mesagges.model.js";
 
 const uri = "mongodb+srv://coderhouse:coderhouse@cluster0.2x8nri1.mongodb.net/";
 

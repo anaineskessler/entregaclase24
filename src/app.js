@@ -1,5 +1,5 @@
 import express from "express";
-import __dirname from "./utils.js";
+import { __dirname, passportCall } from "./utils.js";
 import { Server } from "socket.io";
 import handlebars from "express-handlebars";
 import productsRouter from "./routers/products.router.js";
@@ -7,6 +7,7 @@ import cartsRouter from "./routers/carts.router.js";
 import viewsRouter from "./routers/views.router.js";
 import chatRouter from "./routers/chat.router.js";
 import sessionRouter from "./routers/session.router.js";
+import productViewsRouter from "./routers/products.view.router.js";
 import mongoose from "mongoose";
 
 import chatManager from "./DAO/manager/db/messagesManager.js";
@@ -17,6 +18,9 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 
 import cookieParser from "cookie-parser";
+
+import passport from "passport";
+import initializePassport from "./config/passport.config.js";
 
 const uri = "mongodb+srv://coderhouse:coderhouse@cluster0.2x8nri1.mongodb.net/";
 
@@ -49,6 +53,7 @@ app.use("/chat", chatRouter);
 app.use("/api/products/", productsRouter);
 app.use("/api/carts/", cartsRouter);
 app.use("/sessions/", sessionRouter);
+app.use("/products", passportCall("jwt"), productViewsRouter);
 
 /*
 io.on("connection", (socket) => {
